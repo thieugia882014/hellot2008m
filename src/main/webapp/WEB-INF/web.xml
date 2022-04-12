@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>CreateProductServiet</servlet-name>
+        <servlet-class>com.example.food.controller.product.CreateProductServiet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateProductServiet</servlet-name>
+        <url-pattern>/products/create</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetListProductServiet</servlet-name>
+        <servlet-class>com.example.food.controller.product.GetListProductServiet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetListProductServiet</servlet-name>
+        <url-pattern>/products/list</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>productDetailServiet</servlet-name>
+        <servlet-class>com.example.food.controller.product.productDetailServiet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>productDetailServiet</servlet-name>
+        <url-pattern>/products/detail</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditProductServiet</servlet-name>
+        <servlet-class>com.example.food.controller.product.EditProductServiet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditProductServiet</servlet-name>
+        <url-pattern>/products/edit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteProductServiet</servlet-name>
+        <servlet-class>com.example.food.controller.product.DeleteProductServiet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteProductServiet</servlet-name>
+        <url-pattern>/products/delete</url-pattern>
+    </servlet-mapping>
+</web-app>
